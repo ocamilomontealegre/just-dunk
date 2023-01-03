@@ -194,3 +194,32 @@ main {
   background-color: var(--color-3);
   opacity: 0.8;
 }
+
+/*** Call ***/
+aside {
+  padding: 4.5rem 10rem;
+  background-color: var(--color-6);
+}
+
+.call {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-4);
+}
+
+.call-message {
+  color: var(--color-6);
+}
+
+.call-message p {
+  margin-top: -1.5rem;
+}
+
+.call .btn {
+  width: 20%;
+  border: 1px solid white;
+}
