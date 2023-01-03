@@ -1,0 +1,133 @@
+/*** Styles ***/
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+/*** General Styles ***/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+/*** Variables ***/
+:root {
+  /* Header and Footer background, information text  */
+  --color-1: #1F2937; 
+
+  /* Header main text, logo text */
+  --color-2: #F9FAF8;
+
+  /* Header secondary text, header link text, quote*/
+  --color-3: #E5E7EB;
+
+  /* Button */
+  --color-4: #3882F6;
+
+  /* Basketball ball icon, header links hover */
+  --color-5: #FA8320;
+}
+
+/*** Wrapper ***/
+.wrapper {
+}
+
+/*************************** Header ***/
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 10rem 8rem;
+  background-color: var(--color-1);
+}
+
+/*** Header Menu ***/
+.menu {
+  display: inherit;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.menu .logo a{
+  font-size: 1.5rem;
+  color: var(--color-2);
+}
+
+.menu .logo a .logo-icon {
+  margin: 0 0.1rem;
+  color: var(--color-5);
+}
+
+.menu nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.menu nav a, .message p {
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  color: var(--color-3);
+}
+
+/*** Heading***/
+.heading {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.message {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+.message h1 {
+  margin-bottom: 0;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: var(--color-2);
+}
+
+.message h1 span {
+  color: var(--color-5);
+}
+
+.message p {
+  padding: 0;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+}
+
+/*** Buttons ***/
+.btn {
+  width: 35%;
+  height: 8vh;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-2);
+  background-color: var(--color-4);
+}
