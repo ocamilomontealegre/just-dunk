@@ -142,6 +142,7 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 /*** About ***/
@@ -149,7 +150,8 @@ main {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding: 2rem 10rem 8rem;
+  margin: 0;
+  padding: 1.5rem 10rem 10rem;
   background-color: var(--color-6);
 }
 
@@ -181,4 +183,14 @@ main {
 .about .about-feature p {
   font-size: 1.125rem;
   text-align: center;
+}
+
+/*** Quote ***/
+.quote {
+  padding: 5rem 10rem;
+  font-style: italic;
+  font-size: 2.25rem;
+  color: var(--color-1);
+  background-color: var(--color-3);
+  opacity: 0.8;
 }
